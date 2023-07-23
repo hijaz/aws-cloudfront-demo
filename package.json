@@ -1,0 +1,25 @@
+{
+  "name": "aws-cloudfront-demo",
+  "version": "1.0.0",
+  "description": "aws cloudfront demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name hello-aws --log ../logs/app.log",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop hello-aws",
+    "build": "echo 'Building....'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hijaz/aws-cloudfront-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hijaz/aws-cloudfront-demo/issues"
+  },
+  "homepage": "https://github.com/hijaz/aws-cloudfront-demo#readme",
+  "dependencies": {
+    "pm2": "^5.3.0"
+  }
+}
